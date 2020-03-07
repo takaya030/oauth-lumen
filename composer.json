@@ -1,0 +1,34 @@
+{
+    "name": "takaya030/oauth-lumen",
+    "type": "library",
+    "description": "OAuth Service Provider for Lumen 6",
+    "keywords": ["OAuth", "Lusitanian", "lumen", "php"],
+    "homepage": "https://github.com/takaya030/oauth-lumen",
+    "license": "MIT",
+    "authors": [
+		{
+            "name": "Artdarek",
+            "email": "artdarek@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "takaya030",
+            "email": "takaya030@yahoo.co.jp",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "lusitanian/oauth": "*"
+    },
+    "require-dev": {
+        "illuminate/support": "~5"
+    },    
+    "require-all": true,
+    "autoload": {    
+        "psr-0": {
+            "Takaya030\\OAuth": "src/"
+        }
+    },    
+    "minimum-stability": "dev"
+}
