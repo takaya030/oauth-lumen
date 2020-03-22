@@ -64,13 +64,13 @@ class OAuth {
     {
         $accessor = '::';
         // if config/oauth-4-laravel.php exists use this one
-        if (config('oauth-5-laravel.consumers') != null) {
+        if (config('oauth-6-lumen.consumers') != null) {
             $accessor = '.';
         }
-        $this->storageClass  = config("oauth-5-laravel{$accessor}storage", $this->storageClass);
-        $this->client_id     = config("oauth-5-laravel{$accessor}consumers.$service.client_id");
-        $this->client_secret = config("oauth-5-laravel{$accessor}consumers.$service.client_secret");
-        $this->scope         = config("oauth-5-laravel{$accessor}consumers.$service.scope", []);
+        $this->storageClass  = config("oauth-6-lumen{$accessor}storage", $this->storageClass);
+        $this->client_id     = config("oauth-6-lumen{$accessor}consumers.$service.client_id");
+        $this->client_secret = config("oauth-6-lumen{$accessor}consumers.$service.client_secret");
+        $this->scope         = config("oauth-6-lumen{$accessor}consumers.$service.scope", []);
     }
     /**
      * Create storage instance
