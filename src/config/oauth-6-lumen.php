@@ -12,7 +12,7 @@ return [
 	 * Storage
 	 */
 	'storage' => '\\OAuth\\Common\\Storage\\Session',
-	//'storage' => '\\Takaya030\\OAuth\\OAuthLaravelSession',
+	//'storage' => '\\Takaya030\\OAuth\\OAuthLumenSession',
 
 	/**
 	 * Consumers

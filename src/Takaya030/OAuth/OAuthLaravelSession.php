@@ -8,7 +8,7 @@ use OAuth\Common\Storage\Exception\TokenNotFoundException;
 use OAuth\Common\Storage\TokenStorageInterface;
 use OAuth\Common\Token\TokenInterface;
 
-class OAuthLaravelSession implements TokenStorageInterface
+class OAuthLumenSession implements TokenStorageInterface
 {
     /**
      * @param string $service
