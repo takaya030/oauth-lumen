@@ -184,8 +184,6 @@ Create configuration file manually in config directory ``config/oauth-lumen.php`
 ```php
 <?php
 
-use \App\OAuth\OAuthLaravelSession;
-
 return [
 
 	/*
