@@ -63,8 +63,8 @@ class OAuth {
     public function setConfig($service)
     {
         $accessor = '::';
-        // if config/oauth-4-laravel.php exists use this one
-        if (config('oauth-6-lumen.consumers') != null) {
+        // if config/oauth-lumen.php exists use this one
+        if (config('oauth-lumen.consumers') != null) {
             $accessor = '.';
         }
         $this->storageClass  = config("oauth-lumen{$accessor}storage", $this->storageClass);
