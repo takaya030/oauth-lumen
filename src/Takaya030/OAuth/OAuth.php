@@ -67,10 +67,10 @@ class OAuth {
         if (config('oauth-6-lumen.consumers') != null) {
             $accessor = '.';
         }
-        $this->storageClass  = config("oauth-6-lumen{$accessor}storage", $this->storageClass);
-        $this->client_id     = config("oauth-6-lumen{$accessor}consumers.$service.client_id");
-        $this->client_secret = config("oauth-6-lumen{$accessor}consumers.$service.client_secret");
-        $this->scope         = config("oauth-6-lumen{$accessor}consumers.$service.scope", []);
+        $this->storageClass  = config("oauth-lumen{$accessor}storage", $this->storageClass);
+        $this->client_id     = config("oauth-lumen{$accessor}consumers.$service.client_id");
+        $this->client_secret = config("oauth-lumen{$accessor}consumers.$service.client_secret");
+        $this->scope         = config("oauth-lumen{$accessor}consumers.$service.scope", []);
     }
     /**
      * Create storage instance
