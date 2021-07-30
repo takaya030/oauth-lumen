@@ -107,9 +107,9 @@ class OAuth {
      * @throws Exception If the class is nonexistent or does not implement a valid ServiceInterface
      */
     public function registerService($serviceName, $className)
-	{
+    {
         return $this->_serviceFactory->registerService($serviceName, $className);
-	}
+    }
     /**
      * @param  string $service
      * @param  string $url
